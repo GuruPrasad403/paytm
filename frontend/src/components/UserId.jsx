@@ -38,9 +38,9 @@ function UserId() {
                         <div key={ele._id}  className='flex justify-between items-center overflow-x-hidden px-6 border-b-1 py-5 mx-2'>
                             <div>
                                 <div className='flex  justify-center items-center'>
-                                    <span className='text-4xl bg-gray-100 p-5 text-gray-800 cursor-pointer rounded-full '>{ele.name[0]}</span>
+                                    <span className='text-2xl md:text-4xl bg-gray-100 p-5 text-gray-800 cursor-pointer rounded-full '>{ele.name[0]}</span>
 
-                                    <h1 className='text-4xl p-2'>{ele.name}</h1>
+                                    <h1 className='text-2xl md:text-4xl p-2'>{ele.name}</h1>
                                 </div>
                             </div>
                             <div>
