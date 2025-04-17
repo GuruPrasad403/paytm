@@ -31,7 +31,7 @@ function UserId() {
         navigate("/send")   
     }
     return (
-        <div className='h-[480px] overflow-auto'>
+        <div className='h-full overflow-auto'>
             {
              loader ?  allUser?.map(((ele,i) => {
                     return (
