@@ -10,7 +10,26 @@ app.use(express.json())
 
 app.use("/api/v1/", router)
 
-
+app.get("/", (req,res,next)=>{
+    try {
+    res.status(200).json({
+        msg:"This is an Backend"
+    }) 
+    } catch (error) {
+        next(error)
+    }
+})
+// Handle errors
+app.use((err, req, res, next) => {
+    const status = err.status || 500;
+    res.status(status).json({
+        error: {
+            message: err.message || 'Internal Server Error',
+            status: status
+        }
+    });
+    next()
+});
 try {
     ConneetToDB(db) && app.listen(port, ()=> console.log("Server is Running in the Port 3000"))
  
