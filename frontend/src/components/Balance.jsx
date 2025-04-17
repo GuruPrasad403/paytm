@@ -9,7 +9,7 @@ function Balance(){
     const getBalance = useCallback(async()=>{
         console.log(token)
         try {
-            const resposne = await fetch("http://localhost:3000/api/v1/account/balance",{
+            const resposne = await fetch("https://paytm-delta.vercel.app/api/v1/account/balance",{
                 method:'GET',
                 headers:{
                     authorization:`Bearer ${token}`

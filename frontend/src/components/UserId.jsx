@@ -10,7 +10,7 @@ function UserId() {
     const navigate = useNavigate()    
     const getUserInfo = useCallback(async () => {
         setLoader(false)
-        const response = await fetch("http://localhost:3000/api/v1/user/info", {
+        const response = await fetch("https://paytm-delta.vercel.app/api/v1/user/info", {
             method: 'GET',
             headers: {
                 authorization: `Bearer ${token}`
