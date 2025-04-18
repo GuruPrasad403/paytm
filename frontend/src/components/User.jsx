@@ -29,10 +29,10 @@ function User(){
           }
         }, [token])
     return(
-        <div className="fex flex-col">
-            <div className="flex justify-between items-center">
+        <div className="fex flex-col w-full h-screen overflow-x-hidden">
+            <div className="flex justify-between px-5 items-centers">
                 <Heading heading={"User"}/>
-                <div className="px-5">
+                <div className="">
                 <Button handelSubmit={getUserInfo} value={"Refresh Users. . .  "}/>
                 </div>
             </div>
